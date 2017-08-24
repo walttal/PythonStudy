@@ -24,3 +24,17 @@ if data.has_key("info"):
 
 print data.get("info",[]) #no vlaue, then print [] null list
 
+#-----------------------------------------------------
+
+
+menu = {
+    "Beijing": {
+        "ChaoYang": {
+            "CBD": ['CICC','CITV'],
+            "JinRongJie": [''],
+            "WangJing": ['momo','chuizi'],
+        },
+    "Haidian": ['baidu','ali']
+    }
+}
+print menu["Beijing"]["ChaoYang"]["WangJing"][0]
