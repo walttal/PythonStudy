@@ -20,3 +20,6 @@ import datetime
 f = file('test.json')
 data = json.load(f)
 print '-->',data
+
+#json and xml is cross-platform, but for common data structure.
+#pickle only in python platform, support all data structure of python.
