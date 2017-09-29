@@ -8,6 +8,11 @@ parser.add_option("-4", "--ipv4", dest='ipv4', action='store_true', metavar="CHE
 if options.ipv4:
     print 'Haha'
 
+required = "username usergroup".split()
+for r in required:
+    if options.__dict__[r] is None:
+        parser.error("parameter %s required" % r)
+
 print options
 #options --> class instance
 #args --> list
